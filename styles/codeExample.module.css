@@ -1,0 +1,19 @@
+.codeExample {
+  /* border: 1px solid; */
+  text-align: left;
+  margin: 20px;
+}
+
+.codeExampleHeader {
+  padding: 10px;
+  background-color: #424242;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.codeExampleBody {
+  padding: 10px;
+  background-color: #fafafa;
+}

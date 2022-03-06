@@ -1,0 +1,17 @@
+.about{
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    max-height: 90vh;
+    overflow-x: scroll;
+}
+
+.about h3{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.about p{
+    max-width: 1000px;
+    text-align: left;
+}

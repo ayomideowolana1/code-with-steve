@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.course-body{
+  height: 90vh;
+  overflow-y: scroll;
+  padding: 30px;
+}
+
+.course-nav{
+  height: 90vh;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+
+}
+
+.Content{
+  margin: 10px 50px;
+}

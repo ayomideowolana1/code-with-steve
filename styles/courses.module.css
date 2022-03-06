@@ -1,0 +1,48 @@
+.courses {
+  /* border: 1px solid; */
+  padding: 20px;
+}
+
+.desc {
+  max-width: 900px;
+  margin: auto;
+}
+
+.courseSection h2 {
+  text-align: left;
+  margin: 20px;
+}
+
+.selectCourseCont {
+  padding: 10px;
+  /* border: 1px solid; */
+}
+
+.selectCourse {
+  /* border: 1px solid; */
+  padding: 10px;
+  /* border: 1px solid; */
+  background-color: #f2f2f2;
+  margin: 10px;
+  box-shadow: 3px 3px 1px transparent;
+  transition: 0.05s ease;
+}
+
+.selectCourse:hover {
+    transform: translate(-1px,-1px);
+  box-shadow: 3px 3px 5px #424242;
+  cursor: pointer;
+}
+.selectCourse .img {
+  height: 200px;
+  /* border: 1px solid; */
+  /* background-color: #424242; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.selectCourse .courseTitle {
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+}
