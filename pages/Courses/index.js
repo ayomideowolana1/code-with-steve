@@ -15,23 +15,44 @@ const Courses = () => {
           id: 1.1
         },
         { title: "CSS", url: "/css-logo.png", path: "/Courses/css", id: 1.2 },
-        { title: "Javascript", url: "/js-logo.png", path: "/Courses/js", id: 1.3 }
+        {
+          title: "Javascript",
+          url: "/js-logo.png",
+          path: "/Courses/javascript",
+          id: 1.3
+        }
       ]
     },
     {
       id: 2,
       title: "Web Application Developoment",
       courseList: [
-        { title: "PYTHON  (Django framework)", path: "python", id: 2.1 }
+        {
+          title: "PYTHON  (Django framework)",
+          path: "/Courses/python",
+          id: 2.1,
+          url: "/python-logo.png"
+        }
       ]
     },
     {
       id: 3,
-      title: "Structured Query Language (SQL)",
+      title: "Database Management",
       courseList: [
-        { title: "SQL", path: "sql", id: 3.1 },
-        { title: "MYSQL", path: "mysql", id: 3.2 },
-        { title: "MONGODB", path: "mongodb", id: 3.3 }
+        { title: "SQL", path: "sql", id: 3.1, url: "/sql-logo.png" },
+        { title: "MYSQL", path: "mysql", id: 3.2, url: "/mysql-logo.png" },
+        {
+          title: "MONGODB",
+          path: "mongodb",
+          id: 3.3,
+          url: "/mongodb-logo.png"
+        },
+        {
+          title: "Advanced Excel",
+          path: "excel",
+          id: 3.3,
+          url: "/excel-logo.png"
+        }
       ]
     }
   ];
@@ -82,16 +103,21 @@ const Courses = () => {
 };
 
 const SelectCourse = ({ course }) => {
-  return <div className={`col-3  ${styles.selectCourseCont}`}>
+  return (
+    <div className={`col-3  ${styles.selectCourseCont}`}>
       <Link href={`${course.path}`}>
         <div className={styles.selectCourse}>
-          <div className={styles.img} style={{ backgroundImage: `url(${course.url})` }} />
+          <div
+            className={styles.img}
+            style={{ backgroundImage: `url(${course.url})` }}
+          />
           <div className={styles.courseTitle}>
             {course.title}
           </div>
         </div>
       </Link>
-    </div>;
+    </div>
+  );
 };
 
 export default Courses;

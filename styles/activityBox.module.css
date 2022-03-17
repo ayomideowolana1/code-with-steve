@@ -1,6 +1,7 @@
 .activityBox{
     margin: 20px;
     background-color: rgb(247, 222, 158);
+    max-width: 1000px;
     color: rgb(44, 44, 34);
     text-align: left;
     padding: 10px;

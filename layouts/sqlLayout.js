@@ -1,19 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
-const CSSLayout = ({ children }) => {
-  return <div className="container-fluid ">
+const SQLLayout = ({ children }) => {
+  return (
+    <div className="container-fluid ">
       <div className="row">
         <div className="col-2 course-nav">
           <ul>
             <li>
-              <Link href="/Courses/css/">
+              <Link href="/Courses/sql/">
                 <a>Introduction</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/Courses/css/cssSyntax">
-                <a>CSS Syntax</a>
               </Link>
             </li>
           </ul>
@@ -22,7 +18,8 @@ const CSSLayout = ({ children }) => {
           {children}
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 
-export default CSSLayout;
+export default SQLLayout;

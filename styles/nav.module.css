@@ -41,10 +41,10 @@
 }
 
 .navlinks ul a {
-  background-color: rgb(17, 20, 70);
-  color: white;
-  border: 1px solid;
+  /* color: rgb(17, 20, 70); */
+  font-size: 15px;
   text-decoration: none;
+  font-weight: bold;
   display: block;
   width: 100%;
   text-align: center;
@@ -56,6 +56,7 @@
 }
 
 .navlinks a:hover {
+  background-color: rgb(23, 27, 107);
   transform: scale(1.01, 1.01);
   color: white;
   font-weight: bold;
@@ -64,4 +65,9 @@
 .logoCont {
     display: flex;
     justify-content: center;
+}
+
+.navlinkActive{
+  background-color: rgb(17, 20, 70);
+  color: white;
 }
